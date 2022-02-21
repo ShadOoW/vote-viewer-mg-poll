@@ -42,7 +42,7 @@ export const VoteTimeline = () => {
 
   useEffect(() => {
     if (mark === 0) {
-      setCurrentVote(votes[0]);
+      setCurrentVote(undefined);
     } else {
       setCurrentVote(votes[mark - 1]);
     }
