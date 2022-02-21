@@ -4,7 +4,6 @@ import { Player } from './Player/Player';
 import { VotesSlider } from './Slider/Slider';
 import { VoteList } from './VoteList/VoteList';
 import { players, votes } from '../../data';
-import { normalize } from '../../utils/normalize';
 
 import { initializeApp } from "firebase/app"
 import { getFirestore, getDocs, query, orderBy, collection } from "firebase/firestore"
@@ -52,7 +51,7 @@ export const VoteTimeline = () => {
     <>
       <VotesSlider count={votes.length} handleChange={(_, value) => { setMark(value) }} />
       <div className='time'>
-        {currentVote && new Date(currentVote.timestamp.toDate().toLocaleString()).toLocaleString()}
+        {currentVote && currentVote.timestamp.toDate().toLocaleString()}
       </div>
       {players.map((player) => (
           <div className="players">
