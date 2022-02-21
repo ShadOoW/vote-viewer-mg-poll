@@ -48,15 +48,17 @@ export const VoteTimeline = () => {
     }
   }, [mark]);
 
-  const normalizedPlayers = normalize(players, votes);
   return (
     <>
       <VotesSlider count={votes.length} handleChange={(_, value) => { setMark(value) }} />
+      <div className='time'>
+        {currentVote && new Date(currentVote.timestamp.toDate().toLocaleString()).toLocaleString()}
+      </div>
       {players.map((player) => (
-        <div className="players">
-          <Player player={player} />
-          <VoteList player={player} currentVote={currentVote} />
-        </div>
+          <div className="players">
+            <Player player={player} />
+            <VoteList player={player} currentVote={currentVote} />
+          </div>
       ))}
     </>
   );
