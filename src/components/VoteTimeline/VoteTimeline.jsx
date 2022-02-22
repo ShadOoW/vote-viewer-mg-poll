@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Player } from './Player/Player';
 import { VotesSlider } from './Slider/Slider';
 import { VoteList } from './VoteList/VoteList';
-import { players, votes } from '../../data';
+import { playersD1, playersD2 } from '../../data';
 
 import { initializeApp } from "firebase/app"
 import { getFirestore, getDocs, query, orderBy, collection } from "firebase/firestore"
@@ -22,13 +22,13 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore();
 
-export const VoteTimeline = () => {
+export const VoteTimeline = ({day}) => {
   const [mark, setMark] = useState(0);
   const [currentVote, setCurrentVote] = useState(undefined);
   const [votes, setVotes] = useState([]);
 
   useEffect(async () => {
-    const day1Ref = collection(db, "day1");
+    const day1Ref = collection(db, `day${day}`);
     const q = query(day1Ref, orderBy("timestamp"));
     const querySnapshot = await getDocs(q);
     const result = [];
@@ -36,8 +36,10 @@ export const VoteTimeline = () => {
       result.push(doc.data());
     });
 
+    console.log({result, day});
+
     setVotes(result);
-  }, []);
+  }, [day]);
 
   useEffect(() => {
     if (mark === 0) {
@@ -46,6 +48,8 @@ export const VoteTimeline = () => {
       setCurrentVote(votes[mark - 1]);
     }
   }, [mark]);
+
+  const players = day === 1 ? playersD1 : playersD2;
 
   return (
     <>

@@ -1,1 +1,1 @@
-export { players } from './players';
+export { playersD1, playersD2 } from './players';
