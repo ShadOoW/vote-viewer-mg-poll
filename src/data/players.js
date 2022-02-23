@@ -123,3 +123,51 @@ export const playersD2 = [
     img: "https://via.placeholder.com/64x64.png",
   },
 ];
+
+export const playersD3 = [
+  {
+    display: "SirSamuel016",
+    id: "SirSamuel016",
+    img: "https://i.imgur.com/yRMXGUG.png",
+  },
+  {
+    display: "GrySun",
+    id: "GrySun",
+    img: "https://via.placeholder.com/64x64.png",
+  },
+  {
+    display: "Riku",
+    id: "Riku",
+    img: "https://via.placeholder.com/64x64.png",
+  },
+  {
+    display: "DemonSpeed",
+    id: "DemonSpeed",
+    img: "https://via.placeholder.com/64x64.png",
+  },
+  {
+    display: "JamesRye",
+    id: "JamesRye",
+    img: "https://i.imgur.com/OIsWUCh.png",
+  },
+  {
+    display: "Erinyes",
+    id: "Erinyes",
+    img: "https://via.placeholder.com/64x64.png",
+  },
+  {
+    display: "DigitalDude",
+    id: "DigitalDude",
+    img: "https://i.imgur.com/M8wKIIJ.png",
+  },
+  {
+    display: "Lambu",
+    id: "Lambu",
+    img: "https://i.imgur.com/VRvv9at.png",
+  },
+  {
+    display: "Tatsumaki",
+    id: "Tatsumaki",
+    img: "https://via.placeholder.com/64x64.png",
+  },
+];

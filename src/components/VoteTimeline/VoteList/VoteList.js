@@ -11,8 +11,6 @@ export const VoteList = ({player, currentVote}) => {
     console.log({player: player.id});
     console.log({currentVote: currentVote.players});
   }
-  
-
 
   return (
     <Stack direction="row" spacing={1} alignItems="center">

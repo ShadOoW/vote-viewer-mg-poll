@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Player } from './Player/Player';
 import { VotesSlider } from './Slider/Slider';
 import { VoteList } from './VoteList/VoteList';
-import { playersD1, playersD2 } from '../../data';
+import { playersD1, playersD2, playersD3 } from '../../data';
 
 import { initializeApp } from "firebase/app"
 import { getFirestore, getDocs, query, orderBy, collection } from "firebase/firestore"
@@ -49,7 +49,19 @@ export const VoteTimeline = ({day}) => {
     }
   }, [mark]);
 
-  const players = day === 1 ? playersD1 : playersD2;
+  let players;
+  switch (day) {
+    case 1:
+      players = playersD1;
+      break;
+    case 2:
+      players = playersD2;
+      break;
+    case 3:
+    default:
+      players = playersD3;
+      break;
+  }
 
   return (
     <>
