@@ -68,6 +68,7 @@ export const VoteTimeline = ({day}) => {
       <VotesSlider count={votes.length} handleChange={(_, value) => { setMark(value) }} />
       <div className='time'>
         {currentVote && currentVote.timestamp.toDate().toLocaleString()}
+        {!currentVote && 'N/A'}
       </div>
       {players.map((player) => (
           <div className="players">
