@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/vote-viewer-mg-poll/static/css/main.64559c21.css",
-    "main.js": "/vote-viewer-mg-poll/static/js/main.994db044.js",
+    "main.css": "/vote-viewer-mg-poll/static/css/main.f5028d0c.css",
+    "main.js": "/vote-viewer-mg-poll/static/js/main.feb67fd4.js",
     "static/js/787.7db92089.chunk.js": "/vote-viewer-mg-poll/static/js/787.7db92089.chunk.js",
     "index.html": "/vote-viewer-mg-poll/index.html",
-    "main.64559c21.css.map": "/vote-viewer-mg-poll/static/css/main.64559c21.css.map",
-    "main.994db044.js.map": "/vote-viewer-mg-poll/static/js/main.994db044.js.map",
+    "main.f5028d0c.css.map": "/vote-viewer-mg-poll/static/css/main.f5028d0c.css.map",
+    "main.feb67fd4.js.map": "/vote-viewer-mg-poll/static/js/main.feb67fd4.js.map",
     "787.7db92089.chunk.js.map": "/vote-viewer-mg-poll/static/js/787.7db92089.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.64559c21.css",
-    "static/js/main.994db044.js"
+    "static/css/main.f5028d0c.css",
+    "static/js/main.feb67fd4.js"
   ]
 }
