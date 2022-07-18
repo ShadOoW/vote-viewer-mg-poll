@@ -15,7 +15,7 @@ const useStyles = makeStyles({
 });
 
 function App() {
-  const [value, setValue] = useState(2);
+  const [value, setValue] = useState(0);
   const classes = useStyles();
 
   const handleChange = (event, newValue) => {
@@ -26,13 +26,13 @@ function App() {
     <div className="content">
       <Tabs classes={{ root: classes.customTabs }} value={value} onChange={handleChange}>
         <Tab className={value === 0 ? 'unselected' : ''} label="Day One" />
-        <Tab className={value === 1 ? 'unselected' : ''} label="Day Two" />
-        <Tab className={value === 2 ? 'unselected' : ''} label="Day Three" />
+        {/*<Tab className={value === 1 ? 'unselected' : ''} label="Day Two" />*/}
+        {/*<Tab className={value === 2 ? 'unselected' : ''} label="Day Three" />*/}
       </Tabs>
 
       {value === 0 && (<VoteTimeline day={1} />)}
-      {value === 1 && (<VoteTimeline day={2} />)}
-      {value === 2 && (<VoteTimeline day={3} />)}
+      {/*{value === 1 && (<VoteTimeline day={2} />)}*/}
+      {/*{value === 2 && (<VoteTimeline day={3} />)}*/}
     </div>
   );
 }

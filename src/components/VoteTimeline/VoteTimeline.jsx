@@ -3,7 +3,8 @@ import { useState, useEffect } from "react";
 import { Player } from './Player/Player';
 import { VotesSlider } from './Slider/Slider';
 import { VoteList } from './VoteList/VoteList';
-import { playersD1, playersD2, playersD3 } from '../../data';
+import { playersD1, playersD2, playersD3, game103PlayersD1 } from '../../data';
+import { GAME103DAY1VOTES } from '../../data/game-103-day-1-votes';
 
 import { initializeApp } from "firebase/app"
 import { getFirestore, getDocs, query, orderBy, collection } from "firebase/firestore"
@@ -28,17 +29,15 @@ export const VoteTimeline = ({day}) => {
   const [votes, setVotes] = useState([]);
 
   useEffect(async () => {
-    const day1Ref = collection(db, `day${day}`);
-    const q = query(day1Ref, orderBy("timestamp"));
-    const querySnapshot = await getDocs(q);
-    const result = [];
-    querySnapshot.forEach((doc) => {
-      result.push(doc.data());
-    });
+    // const day1Ref = collection(db, `day${day}`);
+    // const q = query(day1Ref, orderBy("timestamp"));
+    // const querySnapshot = await getDocs(q);
+    // const result = [];
+    // querySnapshot.forEach((doc) => {
+    //   result.push(doc.data());
+    // });
 
-    console.log({result, day});
-
-    setVotes(result);
+    setVotes(GAME103DAY1VOTES);
   }, [day]);
 
   useEffect(() => {
@@ -52,29 +51,31 @@ export const VoteTimeline = ({day}) => {
   let players;
   switch (day) {
     case 1:
-      players = playersD1;
+      players = game103PlayersD1;
       break;
-    case 2:
-      players = playersD2;
-      break;
-    case 3:
+    // case 2:
+    //   players = playersD2;
+    //   break;
+    // case 3:
     default:
-      players = playersD3;
+      players = game103PlayersD1;
       break;
   }
+
+  // {currentVote && currentVote.timestamp.toDate().toLocaleString()}
 
   return (
     <>
       <VotesSlider count={votes.length} handleChange={(_, value) => { setMark(value) }} />
       <div className='time'>
-        {currentVote && currentVote.timestamp.toDate().toLocaleString()}
+        {currentVote && new Date(currentVote.timestamp).toLocaleString()}
         {!currentVote && 'N/A'}
       </div>
       {players.map((player) => (
-          <div className="players">
-            <Player player={player} />
-            <VoteList player={player} currentVote={currentVote} />
-          </div>
+        <div key={player.id} className="players">
+          <Player player={player} currentVote={currentVote} />
+          <VoteList player={player} currentVote={currentVote} />
+        </div>
       ))}
     </>
   );
