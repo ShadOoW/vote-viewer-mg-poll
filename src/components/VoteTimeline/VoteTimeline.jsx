@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Player } from './Player/Player';
 import { VotesSlider } from './Slider/Slider';
 import { VoteList } from './VoteList/VoteList';
-import { playersD1, playersD2, playersD3, game103PlayersD1, game103PlayersD2, GAME103DAY1VOTES, GAME103DAY2VOTES } from '../../data';
+import { game104PlayersD1, GAME104DAY1VOTES } from '../../data';
 
 import { initializeApp } from "firebase/app"
 import { getFirestore, getDocs, query, orderBy, collection } from "firebase/firestore"
@@ -37,9 +37,9 @@ export const VoteTimeline = ({day}) => {
     // });
 
     if (day === 1) {
-      setVotes(GAME103DAY1VOTES);
+      setVotes(GAME104DAY1VOTES);
     } else {
-      setVotes(GAME103DAY2VOTES);
+      setVotes(GAME104DAY1VOTES);
     }
   }, [day]);
 
@@ -54,14 +54,14 @@ export const VoteTimeline = ({day}) => {
   let players;
   switch (day) {
     case 1:
-      players = game103PlayersD1;
+      players = game104PlayersD1;
       break;
     case 2:
-      players = game103PlayersD2;
+      players = game104PlayersD1;
       break;
     case 3:
     default:
-      players = game103PlayersD1;
+      players = game104PlayersD1;
       break;
   }
 

@@ -5,6 +5,8 @@ export const Player = ({player, currentVote}) => {
   const [count, setCount] = useState(0);
   const [isHighest, setIsHighest] = useState(false);
 
+  console.log({player, currentVote});
+
   useEffect(() => {
     if (currentVote && currentVote.players[player.id]) {
       setCount(calculateCount(currentVote.players[player.id]));
