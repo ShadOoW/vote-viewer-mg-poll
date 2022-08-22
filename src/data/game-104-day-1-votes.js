@@ -80,11 +80,31 @@ export const GAME104DAY1VOTES = [
     }
   },
   {
+    postId: 29,
+    timestamp: '2022-07-20T17:05:00.000Z',
+    players: {
+      'Asako': [],
+      'Maryxxi': [{player: 'Anonymous vote', lock: true}],
+      'Digitaldude': [{player: 'GB', lock: false},{player: 'Shad', lock: false}],
+      'Demonspeed': [],
+      'GB': [],
+      'Gnut': [],
+      'SirSam': [],
+      'James': [],
+      'Brandish': [{player: 'Gajeel', lock: false}],
+      'Pom': [],
+      'Shad': [],
+      'Tatsumaki': [],
+      'Gajeel': [],
+      'Hermit': [{player: 'Digitaldude', lock: false}],
+    }
+  },
+  {
     postId: 32,
     timestamp: '2022-07-20T17:55:00.000Z',
     players: {
       'Asako': [],
-      'Maryxxi': [],
+      'Maryxxi': [{player: 'Anonymous vote', lock: true}],
       'Digitaldude': [{player: 'GB', lock: false},{player: 'Shad', lock: false}],
       'Demonspeed': [],
       'GB': [],
@@ -104,7 +124,7 @@ export const GAME104DAY1VOTES = [
     timestamp: '2022-07-20T20:30:00.000Z',
     players: {
       'Asako': [],
-      'Maryxxi': [],
+      'Maryxxi': [{player: 'Anonymous vote', lock: true}],
       'Digitaldude': [{player: 'GB', lock: false},{player: 'Shad', lock: false}],
       'Demonspeed': [],
       'GB': [],
@@ -124,7 +144,7 @@ export const GAME104DAY1VOTES = [
     timestamp: '2022-07-20T21:12:00.000Z',
     players: {
       'Asako': [],
-      'Maryxxi': [],
+      'Maryxxi': [{player: 'Anonymous vote', lock: true}],
       'Digitaldude': [{player: 'GB', lock: false},{player: 'Shad', lock: false}],
       'Demonspeed': [{player: 'James', lock: false}],
       'GB': [],
@@ -144,7 +164,7 @@ export const GAME104DAY1VOTES = [
     timestamp: '2022-07-20T22:39:00.000Z',
     players: {
       'Asako': [{player: 'Demonspeed', lock: false}],
-      'Maryxxi': [],
+      'Maryxxi': [{player: 'Anonymous vote', lock: true}],
       'Digitaldude': [{player: 'GB', lock: false},{player: 'Shad', lock: false}],
       'Demonspeed': [{player: 'James', lock: false}],
       'GB': [],
@@ -164,7 +184,7 @@ export const GAME104DAY1VOTES = [
     timestamp: '2022-07-21T00:49:00.000Z',
     players: {
       'Asako': [{player: 'Demonspeed', lock: false}],
-      'Maryxxi': [],
+      'Maryxxi': [{player: 'Anonymous vote', lock: true}],
       'Digitaldude': [{player: 'GB', lock: false},{player: 'Shad', lock: false}],
       'Demonspeed': [{player: 'James', lock: false}],
       'GB': [],
@@ -184,7 +204,7 @@ export const GAME104DAY1VOTES = [
     timestamp: '2022-07-21T01:57:00.000Z',
     players: {
       'Asako': [{player: 'Demonspeed', lock: false}],
-      'Maryxxi': [],
+      'Maryxxi': [{player: 'Anonymous vote', lock: true}],
       'Digitaldude': [{player: 'GB', lock: false},{player: 'Shad', lock: false}],
       'Demonspeed': [{player: 'James', lock: false}],
       'GB': [],
@@ -204,7 +224,7 @@ export const GAME104DAY1VOTES = [
     timestamp: '2022-07-21T02:24:00.000Z',
     players: {
       'Asako': [{player: 'Demonspeed', lock: false}],
-      'Maryxxi': [],
+      'Maryxxi': [{player: 'Anonymous vote', lock: true}],
       'Digitaldude': [{player: 'GB', lock: false},{player: 'Shad', lock: false}],
       'Demonspeed': [{player: 'James', lock: false}, {player: 'SirSam', lock: false}],
       'GB': [],
@@ -224,7 +244,7 @@ export const GAME104DAY1VOTES = [
     timestamp: '2022-07-21T06:30:00.000Z',
     players: {
       'Asako': [{player: 'Demonspeed', lock: false}],
-      'Maryxxi': [],
+      'Maryxxi': [{player: 'Anonymous vote', lock: true}],
       'Digitaldude': [{player: 'GB', lock: false},{player: 'Shad', lock: false}],
       'Demonspeed': [{player: 'James', lock: false}, {player: 'SirSam', lock: false}, {player: 'Asako', lock: false}],
       'GB': [],
@@ -244,7 +264,7 @@ export const GAME104DAY1VOTES = [
     timestamp: '2022-07-21T09:32:00.000Z',
     players: {
       'Asako': [{player: 'Demonspeed', lock: false}],
-      'Maryxxi': [],
+      'Maryxxi': [{player: 'Anonymous vote', lock: true}],
       'Digitaldude': [{player: 'GB', lock: false},{player: 'Shad', lock: false}],
       'Demonspeed': [{player: 'James', lock: false}, {player: 'SirSam', lock: false}, {player: 'Asako', lock: false}],
       'GB': [{player: 'SirSam', lock: true}],
@@ -264,7 +284,7 @@ export const GAME104DAY1VOTES = [
     timestamp: '2022-07-21T09:32:00.000Z',
     players: {
       'Asako': [{player: 'Demonspeed', lock: false}],
-      'Maryxxi': [],
+      'Maryxxi': [{player: 'Anonymous vote', lock: true}],
       'Digitaldude': [{player: 'GB', lock: false},{player: 'Shad', lock: false}],
       'Demonspeed': [{player: 'James', lock: false}, {player: 'SirSam', lock: false}, {player: 'Asako', lock: false}],
       'GB': [{player: 'SirSam', lock: true}],
@@ -284,7 +304,7 @@ export const GAME104DAY1VOTES = [
     timestamp: '2022-07-21T10:52:00.000Z',
     players: {
       'Asako': [{player: 'Demonspeed', lock: false}, {player: 'Gnut', lock: false}],
-      'Maryxxi': [],
+      'Maryxxi': [{player: 'Anonymous vote', lock: true}],
       'Digitaldude': [{player: 'GB', lock: false},{player: 'Shad', lock: false}],
       'Demonspeed': [{player: 'James', lock: false}, {player: 'SirSam', lock: false}, {player: 'Asako', lock: false}],
       'GB': [{player: 'SirSam', lock: true}],
@@ -304,7 +324,7 @@ export const GAME104DAY1VOTES = [
     timestamp: '2022-07-21T10:53:00.000Z',
     players: {
       'Asako': [{player: 'Demonspeed', lock: false}, {player: 'Gnut', lock: false}],
-      'Maryxxi': [],
+      'Maryxxi': [{player: 'Anonymous vote', lock: true}],
       'Digitaldude': [{player: 'GB', lock: false},{player: 'Shad', lock: false}, {player: 'Shad', lock: true}],
       'Demonspeed': [{player: 'James', lock: false}, {player: 'SirSam', lock: false}, {player: 'Asako', lock: false}],
       'GB': [{player: 'SirSam', lock: true}],
@@ -324,7 +344,7 @@ export const GAME104DAY1VOTES = [
     timestamp: '2022-07-21T10:55:00.000Z',
     players: {
       'Asako': [{player: 'Demonspeed', lock: false}, {player: 'Gnut', lock: false}],
-      'Maryxxi': [],
+      'Maryxxi': [{player: 'Anonymous vote', lock: true}],
       'Digitaldude': [{player: 'GB', lock: false},{player: 'Shad', lock: false}, {player: 'Shad', lock: true}],
       'Demonspeed': [{player: 'James', lock: false}, {player: 'SirSam', lock: false}, {player: 'Asako', lock: false}],
       'GB': [{player: 'SirSam', lock: true}],
@@ -344,7 +364,7 @@ export const GAME104DAY1VOTES = [
     timestamp: '2022-07-21T11:07:00.000Z',
     players: {
       'Asako': [{player: 'Demonspeed', lock: false}, {player: 'Gnut', lock: false}],
-      'Maryxxi': [],
+      'Maryxxi': [{player: 'Anonymous vote', lock: true}],
       'Digitaldude': [{player: 'GB', lock: false},{player: 'Shad', lock: false}, {player: 'Shad', lock: true}, {player: 'GB', lock: true}],
       'Demonspeed': [{player: 'James', lock: false}, {player: 'SirSam', lock: false}, {player: 'Asako', lock: false}],
       'GB': [{player: 'SirSam', lock: true}],
