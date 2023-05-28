@@ -27,11 +27,13 @@ export const Player = ({player, currentVote}) => {
   const calculateCount = (player) => {
     let tempCount = 0;
     for(let i=0; i< player.length; i++) {
-      if (player[i].lock) {
-        tempCount++;
-      } else {
-        if (!wasLocked(player[i])) {
+      if (!player[i].dead) {
+        if (player[i].lock) {
           tempCount++;
+        } else {
+          if (!wasLocked(player[i])) {
+            tempCount++;
+          }
         }
       }
     }
