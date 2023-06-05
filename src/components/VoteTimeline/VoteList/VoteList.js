@@ -32,8 +32,8 @@ export const VoteList = ({player, currentVote}) => {
           className="strong"
           disabled={!vote.lock && wasLocked(vote)}
           label={vote.player}
-          variant={vote.dead ? 'outlined' : 'filled'}
-          color={vote.dead ? 'secondary' : vote.lock ? 'error' : wasLocked(vote) ? 'info' : 'success'}
+          variant={vote.dead || vote.annon ? 'outlined' : 'filled'}
+          color={vote.dead || vote.annon ? 'secondary' : vote.lock ? 'error' : wasLocked(vote) ? 'info' : 'success'}
           size="small"
         />
       ))}
