@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/vote-viewer-mg-poll/static/css/main.da0edaac.css",
-    "main.js": "/vote-viewer-mg-poll/static/js/main.1c6aa065.js",
+    "main.js": "/vote-viewer-mg-poll/static/js/main.45159b60.js",
     "static/js/787.7db92089.chunk.js": "/vote-viewer-mg-poll/static/js/787.7db92089.chunk.js",
     "index.html": "/vote-viewer-mg-poll/index.html",
     "main.da0edaac.css.map": "/vote-viewer-mg-poll/static/css/main.da0edaac.css.map",
-    "main.1c6aa065.js.map": "/vote-viewer-mg-poll/static/js/main.1c6aa065.js.map",
+    "main.45159b60.js.map": "/vote-viewer-mg-poll/static/js/main.45159b60.js.map",
     "787.7db92089.chunk.js.map": "/vote-viewer-mg-poll/static/js/787.7db92089.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.da0edaac.css",
-    "static/js/main.1c6aa065.js"
+    "static/js/main.45159b60.js"
   ]
 }
